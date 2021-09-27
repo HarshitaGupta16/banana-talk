@@ -5,7 +5,7 @@ var outputDiv = document.querySelector("#output");
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 function getTranslationURL(input) {
-  return `${serverURL} + ? + text= + ${input}`;
+  return `${serverURL}?text=${input}`;
   // in return construct the serverURL by serverURL + "?" starts the query parameter + "text=" this is key in query + then the value that is input.
   // This will give the translation url
 }
